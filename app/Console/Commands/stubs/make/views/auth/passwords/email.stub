@@ -8,7 +8,7 @@
         <img src="{{ asset('images/brand/tabler.svg') }}" class="h-6" alt="">
       </div>
       <form class="card" action="{{ route('password.email') }}" method="POST">
-        @csrf
+        {{ csrf_field() }}
         <div class="card-body p-6">
           @if (session('status'))
               <div class="alert alert-success">

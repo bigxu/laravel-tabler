@@ -8,7 +8,7 @@
         <img src="./assets/brand/tabler.svg" class="h-6" alt="">
       </div>
       <form class="card" action="{{ route('register') }}" method="POST">
-        @csrf
+        {{ csrf_field() }}
         <div class="card-body p-6">
           <div class="card-title">{{ __('Register') }}</div>
           <div class="form-group">
